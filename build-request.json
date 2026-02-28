@@ -1,0 +1,43 @@
+{
+  "kind": "build_request",
+  "title": "Fix: Remove all pricing information from service cards on Services page",
+  "projectName": "Cyber Cafe Delhi",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "text": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "कीमत तो अभी तक शो कर रही है"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No rupee amounts, price numbers, or currency symbols are visible on any service card on the Services page.",
+        "No pricing badge, 'Starting at', 'From', or similar price-indicating label is rendered on any card.",
+        "All service cards that previously showed pricing now show a dot '•' or have the pricing element removed entirely.",
+        "The change applies to all service categories: internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other listed services.",
+        "The visual layout and card structure remains intact after removing pricing text."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "Do not alter any contact information (phone: 9220270576, address: Shop, Hotel SKY Blue WALI GALI, Mahipalpur, Delhi).",
+    "Do not change any other page content outside of the Services page pricing fix."
+  ],
+  "nonGoals": [
+    "Adding new services or modifying service descriptions.",
+    "Changing the visual theme or card layout.",
+    "Modifying the Contact page or Footer.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

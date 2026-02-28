@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix: Remove all pricing information from service cards on Services page",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Remove all pricing information from service cards on Services page",
+      "acceptanceCriteria": [
+        "No rupee amounts, price numbers, or currency symbols are visible on any service card on the Services page.",
+        "No pricing badge, 'Starting at', 'From', or similar price-indicating label is rendered on any card.",
+        "All service cards that previously showed pricing now show a dot '•' or have the pricing element removed entirely.",
+        "The change applies to all service categories: internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other listed services.",
+        "The visual layout and card structure remains intact after removing pricing text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Services.tsx",
+          "operation": "modify",
+          "description": "Remove all pricing/cost text from every service card. Replace any price values, pricing badges, rate text (e.g., '₹20/hour', 'Starting at ₹X', etc.) with a neutral dot placeholder ('•') or remove them entirely. Ensure no monetary values, rupee symbols, or price-related labels remain visible. Preserve the existing card layout and structure while eliminating all cost-related strings from internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other service categories."
+        }
+      ]
+    }
+  ]
+}

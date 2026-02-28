@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Main Motoko actor that combines blob storage and authorization mixins, and exposes endpoints for user profile management and contact form submission/retrieval with role-based access control.",
+  "feature_evidence.json": "Feature evidence report confirming that all pricing/cost text was removed from every service card on the Services page, with high confidence tied to test REQ-14.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file, serving as a quick reference for the project's frontend structure and recent changes.",
+  "frontend/index.css": "Global Tailwind CSS stylesheet defining OKLCH-based light and dark theme CSS custom properties for colors, borders, and UI component tokens.",
+  "frontend/index.html": "HTML entry point with SEO meta tags, Open Graph/Twitter cards, and JSON-LD LocalBusiness structured data for the internet cafe with address in Mahipalpur, Delhi and phone 9220270576.",
+  "frontend/src/App.tsx": "Root React app component that sets up TanStack Router with a shared Navbar/Footer layout and three routes: Home (/), Services (/services), and Contact (/contact).",
+  "frontend/src/components/Footer.tsx": "Four-column responsive footer displaying brand info, quick links, services list, and contact details (phone 9220270576, Mahipalpur Delhi address) with social media icons.",
+  "frontend/src/components/Navbar.tsx": "Sticky responsive navigation bar with logo, active-link highlighting, scroll-based background blur, and a mobile hamburger menu with a 'Get Connected' CTA button.",
+  "frontend/src/components/SEOHead.tsx": "Headless React component that dynamically updates the document title and meta tags (description, Open Graph, Twitter) for per-page SEO via useEffect.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using React Query, supporting both anonymous and authenticated (Internet Identity) usage, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing login/logout state via DFINITY's AuthClient and exposing identity, login status, and helper flags to child components.",
+  "frontend/src/hooks/useQueries.ts": "Exports a `useSubmitContactForm` mutation hook that submits a contact form (name, phone, message) to the backend actor and invalidates the contactForms query on success.",
+  "frontend/src/index.css": "Global stylesheet that imports Google Fonts, sets up Tailwind base/components/utilities, defines CSS custom properties for a dark cyber-themed design system, and adds utility classes for glows, gradients, and grid backgrounds.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app with QueryClientProvider and InternetIdentityProvider wrapping the root App component.",
+  "frontend/src/pages/Contact.tsx": "Contact page displaying location, phone, hours, and email info cards alongside a form that submits name, phone, and message to the backend via the `useSubmitContactForm` mutation with toast feedback.",
+  "frontend/src/pages/Home.tsx": "Home page featuring a hero section, featured government document services grid, stats bar, and a 'why us' list, all with SEO metadata via SEOHead.",
+  "frontend/src/pages/Services.tsx": "Services page listing all offered services (internet, computer rental, government document assistance, printing, etc.) with feature details, pricing badges, and a call-to-action linking to the contact page.",
+  "frontend/src/utils/urlParams.ts": "Utility functions for reading, storing, and clearing URL parameters from both query strings and hash-based routes, with sessionStorage persistence support.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with dark mode, custom fonts (Space Grotesk, Inter), OKLCH-based color tokens, glow shadows, and animation keyframes for an internet cafe marketing site.",
+  "project_state.json": "Project state tracking file describing a public-facing SEO-focused website for an internet cafe offering government document services, including existing features, known issues, and architectural notes."
+}

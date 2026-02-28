@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Building a public-facing website for an Internet Cafe business to improve online visibility on Google and attract more customers. The cafe offers online government document services (birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card) and does NOT offer gaming services.",
+  "architectural_notes": [
+    "Public-facing marketing website (not a management system) — focus on SEO and customer attraction",
+    "Services offered include online government document services (birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card) — gaming is NOT a service",
+    "Owner contact: Phone 9220270576, Address: Shop, Hotel SKY Blue WALI GALI MAHIPALPUR DELHI"
+  ],
+  "known_issues": [
+    "Pricing information is still visible on service cards despite the fix attempt — needs to be fully removed/replaced with dots"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-appealing-public-facing-homepage-that-clearly-presents-the-internet-cafe-business-name-a-hero-banner-with-a-tagline-a-brief-about-section-highlights-of-key-services-and-a-call-to-action-button-directing-visitors-to-the-services-or-contact-page",
+      "title": "Create a visually appealing public-facing homepage that clearly presents the Internet Cafe business name, a hero banner with a tagline, a brief about section, highlights of key services, and a call-to-action button directing visitors to the Services or Contact page.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-services-page-listing-all-internet-cafe-offerings-including-high-speed-internet-browsing-computer-rental-by-the-hour-gaming-sessions-document-printing-and-scanning-photocopying-lamination-and-any-additional-services-each-service-should-display-a-name-short-description-and-pricing-information",
+      "title": "Create a dedicated Services page listing all Internet Cafe offerings including: high-speed internet browsing, computer rental by the hour, gaming sessions, document printing and scanning, photocopying, lamination, and any additional services. Each service should display a name, short description, and pricing information.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-location-page-that-includes-the-business-address-phone-number-operating-hours-and-a-google-maps-embed-placeholder-static-map-image-include-a-simple-contact-inquiry-form-with-name-phone-and-message-fields",
+      "title": "Create a Contact & Location page that includes the business address, phone number, operating hours, and a Google Maps embed placeholder (static map image). Include a simple contact inquiry form with name, phone, and message fields.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-meta-tags-on-all-pages-including-title-tags-meta-descriptions-open-graph-tags-and-a-structured-page-heading-hierarchy-h1-h2-h3-so-the-website-can-be-indexed-and-discovered-on-google-search",
+      "title": "Implement SEO meta tags on all pages including title tags, meta descriptions, Open Graph tags, and a structured page heading hierarchy (H1, H2, H3) so the website can be indexed and discovered on Google search.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-persistent-navigation-bar-with-links-to-home-services-and-contact-pages-and-a-footer-with-business-name-quick-links-and-contact-info-both-should-be-responsive-for-mobile-and-desktop-screens",
+      "title": "Build a persistent navigation bar with links to Home, Services, and Contact pages, and a footer with business name, quick links, and contact info. Both should be responsive for mobile and desktop screens.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-modern-tech-inspired-visual-theme-using-dark-backgrounds-with-vibrant-cyan-green-accent-colors-clean-sans-serif-typography-and-card-based-layouts-to-convey-a-professional-and-contemporary-internet-cafe-brand-apply-this-style-consistently-across-all-pages",
+      "title": "Apply a modern, tech-inspired visual theme using dark backgrounds with vibrant cyan/green accent colors, clean sans-serif typography, and card-based layouts to convey a professional and contemporary Internet Cafe brand. Apply this style consistently across all pages.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-gaming-sessions-service-card-from-the-services-page-and-replace-it-with-six-online-government-document-service-cards-birth-certificate-aadhaar-update-pan-card-ration-card-health-card-and-ayushman-card-each-card-should-display-the-service-name-a-short-description-explaining-what-assistance-is-provided-and-pricing-information-consistent-with-the-existing-card-based-layout-and-cyber-theme",
+      "title": "Remove the gaming sessions service card from the Services page and replace it with six online government document service cards: Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, and Ayushman Card. Each card should display the service name, a short description explaining what assistance is provided, and pricing information, consistent with the existing card-based layout and cyber theme.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-featured-services-section-to-remove-any-reference-to-gaming-and-instead-highlight-the-online-government-document-services-birth-certificate-aadhaar-update-pan-card-ration-card-health-card-ayushman-card-as-a-key-offering-of-the-business",
+      "title": "Update the homepage featured services section to remove any reference to gaming and instead highlight the online government document services (Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card) as a key offering of the business.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-s-services-quick-links-list-to-remove-gaming-and-add-the-online-government-document-services-birth-certificate-aadhaar-update-pan-card-ration-card-health-card-ayushman-card",
+      "title": "Update the footer's services quick-links list to remove gaming and add the online government document services (Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-seo-meta-tags-page-titles-and-meta-descriptions-site-wide-home-services-contact-pages-and-index-html-to-remove-references-to-gaming-and-include-references-to-online-government-document-services-such-as-birth-certificate-aadhaar-update-pan-card-ration-card-health-card-and-ayushman-card",
+      "title": "Update all SEO meta tags, page titles, and meta descriptions site-wide (Home, Services, Contact pages and index.html) to remove references to gaming and include references to online government document services such as birth certificate, Aadhaar update, PAN card, ration card, health card, and Ayushman card.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-service-card-pricing-text-on-the-services-page-with-a-dot-placeholder-e-g-or-instead-of-any-price-values-no-pricing-information-should-be-visible-on-any-service-card",
+      "title": "Replace all service card pricing text on the Services page with a dot placeholder (e.g., '•' or '—') instead of any price values. No pricing information should be visible on any service card.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-page-and-footer-to-display-the-owner-s-phone-number-as-9220270576-and-the-business-address-as-shop-hotel-sky-blue-wali-gali-mahipalpur-delhi-replace-any-placeholder-or-previously-used-phone-number-and-address-with-these-exact-values-site-wide",
+      "title": "Update the Contact page and Footer to display the owner's phone number as '9220270576' and the business address as 'Shop, Hotel SKY Blue WALI GALI, Mahipalpur, Delhi'. Replace any placeholder or previously used phone number and address with these exact values site-wide.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-remove-all-pricing-cost-text-from-every-service-card-on-the-services-page-frontend-src-pages-services-tsx-replace-any-price-values-pricing-badges-rate-text-or-cost-related-strings-with-a-neutral-dot-placeholder-or-remove-them-entirely-no-monetary-values-rupee-symbols-or-price-related-labels-should-be-visible-anywhere-on-the-services-page",
+      "title": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with business info, services, and contact details",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "SEO optimization so the website appears on Google search results",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Services page listing all Internet Cafe offerings (browsing, printing, gaming, etc.)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Contact/location page with address, phone, and map embed",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Store the business contact form submissions in the backend so the cafe owner can later review customer inquiries. The form should accept name, phone number, and message fields and persist them with a timestamp.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Remove gaming services from the website; replace with online government document services: birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Remove pricing from service cards and replace with dots/placeholders. Add owner's phone number (9220270576) and address (Shop, Hotel SKY Blue WALI GALI MAHIPALPUR DELHI) to the website.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Internet Cafe Services",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

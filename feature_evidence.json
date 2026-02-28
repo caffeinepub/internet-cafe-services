@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-completely-remove-all-pricing-cost-text-from-every-service-card-on-the-services-page-frontend-src-pages-services-tsx-replace-any-price-values-pricing-badges-rate-text-or-cost-related-strings-with-a-neutral-dot-placeholder-or-remove-them-entirely-no-monetary-values-rupee-symbols-or-price-related-labels-should-be-visible-anywhere-on-the-services-page",
+      "featureTitle": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+      "files": [
+        "frontend/src/pages/Services.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
