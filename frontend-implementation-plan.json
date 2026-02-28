@@ -1,23 +1,73 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix: Remove all pricing information from service cards on Services page",
+  "title": "Rebrand site to 'Rahul Cyber Cafe' across all pages and SEO",
   "requirements": [
     {
-      "id": "REQ-14",
-      "summary": "Remove all pricing information from service cards on Services page",
+      "id": "REQ-15",
+      "summary": "Update the business name to 'Rahul Cyber Cafe' across all frontend files where the cafe's name appears, including Navbar, Footer, Home page hero, Contact page, and any other in-page text that references the business name.",
       "acceptanceCriteria": [
-        "No rupee amounts, price numbers, or currency symbols are visible on any service card on the Services page.",
-        "No pricing badge, 'Starting at', 'From', or similar price-indicating label is rendered on any card.",
-        "All service cards that previously showed pricing now show a dot '•' or have the pricing element removed entirely.",
-        "The change applies to all service categories: internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other listed services.",
-        "The visual layout and card structure remains intact after removing pricing text."
+        "Navbar logo/brand text displays 'Rahul Cyber Cafe'",
+        "Footer brand name displays 'Rahul Cyber Cafe'",
+        "Home page hero heading includes 'Rahul Cyber Cafe'",
+        "Contact page business name displays 'Rahul Cyber Cafe'",
+        "No page shows the old generic name 'Internet Cafe Services' or 'Internet Cafe' as the business name"
       ],
       "file_operations": [
         {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Update the logo/brand text in the Navbar component to display 'Rahul Cyber Cafe' instead of any generic placeholder or 'Internet Cafe'."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the brand name in the Footer component to display 'Rahul Cyber Cafe' in the brand info section instead of any generic placeholder."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Update the hero section heading and any business name references on the Home page to display 'Rahul Cyber Cafe' instead of 'Internet Cafe' or generic placeholders."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Update the business name display on the Contact page to show 'Rahul Cyber Cafe' instead of any generic placeholder."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Update all SEO metadata site-wide to use 'Rahul Cyber Cafe' as the business name in title tags, meta descriptions, Open Graph tags, Twitter cards, JSON-LD structured data, and per-page SEOHead calls following the pattern 'Rahul Cyber Cafe — [Page Subtitle]'.",
+      "acceptanceCriteria": [
+        "frontend/index.html <title> contains 'Rahul Cyber Cafe'",
+        "og:title and og:site_name contain 'Rahul Cyber Cafe'",
+        "JSON-LD LocalBusiness 'name' field is 'Rahul Cyber Cafe'",
+        "Home page SEO title contains 'Rahul Cyber Cafe'",
+        "Services page SEO title contains 'Rahul Cyber Cafe'",
+        "Contact page SEO title contains 'Rahul Cyber Cafe'",
+        "All meta descriptions reference 'Rahul Cyber Cafe' by name"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the <title> tag to include 'Rahul Cyber Cafe'. Update all meta description, Open Graph (og:title, og:site_name), and Twitter card metadata to reference 'Rahul Cyber Cafe'. Update the JSON-LD LocalBusiness structured data 'name' field to 'Rahul Cyber Cafe'."
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Update the SEOHead component call to set the page title following the pattern 'Rahul Cyber Cafe — [Home subtitle]' and ensure the meta description references 'Rahul Cyber Cafe' by name."
+        },
+        {
           "path": "frontend/src/pages/Services.tsx",
           "operation": "modify",
-          "description": "Remove all pricing/cost text from every service card. Replace any price values, pricing badges, rate text (e.g., '₹20/hour', 'Starting at ₹X', etc.) with a neutral dot placeholder ('•') or remove them entirely. Ensure no monetary values, rupee symbols, or price-related labels remain visible. Preserve the existing card layout and structure while eliminating all cost-related strings from internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other service categories."
+          "description": "Update the SEOHead component call to set the page title following the pattern 'Rahul Cyber Cafe — [Services subtitle]' and ensure the meta description references 'Rahul Cyber Cafe' by name."
+        },
+        {
+          "path": "frontend/src/pages/Contact.tsx",
+          "operation": "modify",
+          "description": "Update the SEOHead component call to set the page title following the pattern 'Rahul Cyber Cafe — [Contact subtitle]' and ensure the meta description references 'Rahul Cyber Cafe' by name."
         }
       ]
     }

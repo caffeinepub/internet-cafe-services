@@ -90,10 +90,10 @@ export default function Home() {
   return (
     <>
       <SEOHead
-        title="Internet Cafe Services – Birth Certificate, Aadhaar, PAN Card & Online Services"
-        description="Visit Internet Cafe Services for online government document assistance: Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card, printing & more. Open 7 days a week!"
-        ogTitle="Internet Cafe Services – Your Local Cyber Cafe"
-        ogDescription="Online government document services, fast internet, printing & more. Affordable rates, friendly service. Visit us today!"
+        title="Rahul Cyber Cafe – Birth Certificate, Aadhaar, PAN Card & Online Services"
+        description="Visit Rahul Cyber Cafe for online government document assistance: Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card, printing & more. Open 7 days a week in Mahipalpur, Delhi!"
+        ogTitle="Rahul Cyber Cafe – Your Local Cyber Cafe in Mahipalpur, Delhi"
+        ogDescription="Rahul Cyber Cafe — online government document services, fast internet, printing & more. Affordable rates, friendly service. Visit us today!"
       />
 
       {/* Hero Section */}
@@ -102,7 +102,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src="/assets/generated/cafe-hero.dim_1400x600.png"
-            alt="Internet Cafe interior with glowing screens"
+            alt="Rahul Cyber Cafe interior with glowing screens"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-dark-base/80 via-dark-base/70 to-dark-base" />
@@ -120,11 +120,11 @@ export default function Home() {
           </Badge>
 
           <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            <span className="text-foreground">Your Local</span>
+            <span className="gradient-text text-glow-cyan">Rahul Cyber Cafe</span>
             <br />
-            <span className="gradient-text text-glow-cyan">Online Services</span>
+            <span className="text-foreground text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Online Services</span>
             <br />
-            <span className="text-foreground">Cyber Cafe</span>
+            <span className="text-foreground text-2xl sm:text-3xl md:text-4xl">Mahipalpur, Delhi</span>
           </h1>
 
           <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -195,13 +195,14 @@ export default function Home() {
                 About Us
               </Badge>
               <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-                Your Trusted
-                <span className="gradient-text"> Neighborhood</span>
+                <span className="gradient-text">Rahul Cyber Cafe</span>
+                <br />
+                Your Trusted Neighborhood
                 <br />
                 Cyber Cafe
               </h2>
               <p className="text-muted-foreground text-base leading-relaxed mb-6">
-                Internet Cafe Services has been serving the local community with reliable, affordable, and fast digital services. Whether you need to apply for a Birth Certificate, update your Aadhaar, get a PAN Card, Ration Card, Health Card, or Ayushman Card — we've got you covered.
+                Rahul Cyber Cafe has been serving the local community with reliable, affordable, and fast digital services. Whether you need to apply for a Birth Certificate, update your Aadhaar, get a PAN Card, Ration Card, Health Card, or Ayushman Card — we've got you covered.
               </p>
               <p className="text-muted-foreground text-base leading-relaxed mb-8">
                 Our modern facility is equipped with the latest computers, high-speed fiber internet, and professional printing equipment. We pride ourselves on providing a clean, comfortable, and welcoming environment for all our customers.
@@ -337,7 +338,7 @@ export default function Home() {
             <span className="gradient-text">Government Documents?</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
-            Visit us today or get in touch. Our staff is ready to assist you with all your online document needs — quickly and affordably.
+            Visit Rahul Cyber Cafe today or get in touch. Our staff is ready to assist you with all your online document needs — quickly and affordably.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/contact">

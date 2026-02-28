@@ -77,7 +77,7 @@ const services = [
     title: 'Ration Card',
     description:
       'Apply for a new ration card, add or remove family members, or update your ration card details through the state government portal with our expert assistance.',
-    features: ['New ration card', 'Member addition/removal', 'Address update', 'State portal assistance'],
+    features: ['New application', 'Member addition/removal', 'Detail updates', 'State portal assistance'],
     color: 'green',
     popular: false,
   },
@@ -86,8 +86,8 @@ const services = [
     icon: Heart,
     title: 'Health Card',
     description:
-      'Register for government health schemes and get your health card issued. We assist with form filling, document submission, and enrollment on the health portal.',
-    features: ['Health scheme enrollment', 'Card registration', 'Document submission', 'Portal assistance'],
+      'Register for government health schemes and get your health card issued online. We guide you through the entire process from eligibility check to card issuance.',
+    features: ['Eligibility check', 'Online registration', 'Document submission', 'Card issuance'],
     color: 'cyan',
     popular: false,
   },
@@ -96,8 +96,8 @@ const services = [
     icon: Shield,
     title: 'Ayushman Card',
     description:
-      'Apply for the Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PM-JAY) health card. We help eligible families register and get their Ayushman card issued.',
-    features: ['PM-JAY registration', 'Eligibility check', 'Family enrollment', 'Card download'],
+      'PM-JAY Ayushman Bharat card registration for eligible families. Get access to free healthcare benefits with our quick and easy registration assistance.',
+    features: ['Eligibility verification', 'Online registration', 'Family enrollment', 'Card download'],
     color: 'green',
     popular: true,
   },
@@ -106,8 +106,8 @@ const services = [
     icon: Printer,
     title: 'Document Printing',
     description:
-      'Print your documents, photos, forms, and assignments in black & white or full color. We support A4, A3, and legal size paper formats.',
-    features: ['Black & white printing', 'Color printing', 'A4, A3, Legal sizes', 'Photo printing'],
+      'High-quality black & white and color printing services for documents, photos, forms, and more. Fast turnaround with professional results.',
+    features: ['B&W printing', 'Color printing', 'Photo printing', 'A4 & A3 sizes'],
     color: 'cyan',
     popular: false,
   },
@@ -116,8 +116,8 @@ const services = [
     icon: ScanLine,
     title: 'Document Scanning',
     description:
-      'Scan your documents, certificates, photos, and ID cards to digital format. We provide high-resolution scans saved as PDF or image files.',
-    features: ['High-resolution scans', 'PDF & image output', 'Email delivery', 'ID & certificate scanning'],
+      'Scan your documents to digital format quickly and accurately. Get high-resolution scans saved as PDF or image files, ready for email or upload.',
+    features: ['High-resolution scans', 'PDF & image formats', 'Email delivery', 'Multi-page scanning'],
     color: 'green',
     popular: false,
   },
@@ -126,28 +126,28 @@ const services = [
     icon: Copy,
     title: 'Photocopying',
     description:
-      'Quick and affordable photocopying services for all your documents. Bulk copying available at discounted rates for large volumes.',
-    features: ['Fast turnaround', 'Bulk discounts', 'A4 & A3 sizes', 'Double-sided copies'],
+      'Fast and affordable photocopying services for all your document needs. Single or bulk copies available with quick turnaround.',
+    features: ['Single copies', 'Bulk copying', 'A4 & A3 sizes', 'Quick turnaround'],
     color: 'cyan',
     popular: false,
   },
   {
     id: 12,
-    icon: FileText,
-    title: 'Form Filling & Typing',
+    icon: Layers,
+    title: 'Lamination',
     description:
-      'Need help filling out online forms, typing documents, or creating resumes? Our staff can assist you with all your typing and form-filling needs.',
-    features: ['Online form filling', 'Resume creation', 'Application forms', 'Data entry'],
+      'Protect your important documents, certificates, and ID cards with our professional lamination service. Available in various sizes.',
+    features: ['ID card size', 'A4 lamination', 'Certificate size', 'Durable finish'],
     color: 'green',
     popular: false,
   },
   {
     id: 13,
-    icon: Layers,
-    title: 'Lamination',
+    icon: FileText,
+    title: 'Form Filling Assistance',
     description:
-      'Protect your important documents, ID cards, certificates, and photos with our professional lamination service. Available in multiple sizes.',
-    features: ['ID card size', 'A4 & A3 lamination', 'Glossy & matte finish', 'Same-day service'],
+      'Need help filling out government or official forms? Our staff will assist you in accurately completing any online or offline form.',
+    features: ['Government forms', 'Online applications', 'Offline forms', 'Accuracy guaranteed'],
     color: 'cyan',
     popular: false,
   },
@@ -157,15 +157,15 @@ export default function Services() {
   return (
     <>
       <SEOHead
-        title="Our Services – Birth Certificate, Aadhaar, PAN Card, Ration Card & More"
-        description="Get government document services at Internet Cafe Services: Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card, printing, scanning & more. Affordable rates!"
-        ogTitle="Services – Internet Cafe Services"
-        ogDescription="Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card, printing, scanning & more. Affordable rates at your local cyber cafe."
+        title="Rahul Cyber Cafe — Services | Birth Certificate, Aadhaar, PAN Card & More"
+        description="Rahul Cyber Cafe offers 13+ services: Birth Certificate, Aadhaar Update, PAN Card, Ration Card, Health Card, Ayushman Card, internet browsing, printing, scanning & more in Mahipalpur, Delhi."
+        ogTitle="Rahul Cyber Cafe — All Services"
+        ogDescription="Explore all services at Rahul Cyber Cafe: government document assistance, high-speed internet, printing, scanning, lamination & more."
       />
 
       {/* Page Header */}
-      <section className="relative pt-28 pb-16 overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-20" />
+      <section className="pt-28 pb-12 lg:pt-36 lg:pb-16 relative overflow-hidden">
+        <div className="absolute inset-0 grid-bg opacity-10" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyber-cyan/5 blur-3xl rounded-full" />
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge
@@ -178,53 +178,54 @@ export default function Services() {
             Our <span className="gradient-text">Services</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Government document services, internet access, printing, scanning & more — all under one roof. Fast, reliable, and affordable.
+            From government document assistance to high-speed internet and printing — Rahul Cyber Cafe has everything you need, all under one roof.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="pb-16 lg:pb-24">
+      <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Card
                 key={service.id}
-                className="bg-dark-card border-border/50 card-glow border-glow group relative overflow-hidden"
+                className="bg-dark-card border-border/50 card-glow border-glow group relative"
               >
                 {service.popular && (
-                  <div className="absolute top-3 right-3">
-                    <Badge className="bg-cyber-cyan text-dark-base text-xs font-heading font-semibold px-2 py-0.5">
+                  <div className="absolute top-4 right-4">
+                    <Badge
+                      className={`text-xs font-heading font-semibold ${
+                        service.color === 'cyan'
+                          ? 'bg-cyber-cyan/20 text-cyber-cyan border-cyber-cyan/30'
+                          : 'bg-cyber-green/20 text-cyber-green border-cyber-green/30'
+                      }`}
+                      variant="outline"
+                    >
                       Popular
                     </Badge>
                   </div>
                 )}
                 <CardContent className="p-6">
-                  {/* Icon */}
                   <div
-                    className={`w-14 h-14 rounded-2xl mb-5 flex items-center justify-center transition-all duration-300 ${
+                    className={`w-12 h-12 rounded-xl mb-4 flex items-center justify-center transition-all duration-300 ${
                       service.color === 'cyan'
-                        ? 'bg-cyber-cyan/15 group-hover:bg-cyber-cyan/25 group-hover:shadow-glow-cyan'
-                        : 'bg-cyber-green/15 group-hover:bg-cyber-green/25 group-hover:shadow-glow-green'
+                        ? 'bg-cyber-cyan/15 group-hover:bg-cyber-cyan/25'
+                        : 'bg-cyber-green/15 group-hover:bg-cyber-green/25'
                     }`}
                   >
                     <service.icon
-                      className={`w-7 h-7 ${
+                      className={`w-6 h-6 ${
                         service.color === 'cyan' ? 'text-cyber-cyan' : 'text-cyber-green'
                       }`}
                     />
                   </div>
-
-                  {/* Title */}
-                  <h2 className="font-heading font-semibold text-foreground text-base mb-2 leading-snug">
+                  <h3 className="font-heading font-semibold text-foreground text-base mb-2 pr-16">
                     {service.title}
-                  </h2>
-
-                  {/* Description */}
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
-
                   {/* Features */}
                   <ul className="space-y-1.5">
                     {service.features.map((feature) => (
@@ -245,51 +246,30 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Note */}
-      <section className="py-12 bg-dark-card/50 border-y border-border/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading font-bold text-2xl text-foreground mb-4">
-              Affordable & Reliable Services
-            </h2>
-            <p className="text-muted-foreground text-base leading-relaxed mb-6">
-              We offer special discounts for students, bulk printing, and government document packages. Ask our staff for combo packages and current rates!
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Student Discounts', 'Bulk Printing Offers', 'Document Packages', 'No Hidden Charges'].map(
-                (tag) => (
-                  <Badge
-                    key={tag}
-                    variant="outline"
-                    className="border-cyber-green/40 text-cyber-green bg-cyber-green/10 text-xs px-3 py-1"
-                  >
-                    {tag}
-                  </Badge>
-                )
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 lg:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-4">
-            Have Questions About Our Services?
+      {/* CTA Section */}
+      <section className="py-16 lg:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 grid-bg opacity-10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-cyber-cyan/5 blur-3xl rounded-full" />
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-6">
+            Ready to Get Started?
+            <br />
+            <span className="gradient-text">Visit Rahul Cyber Cafe Today</span>
           </h2>
-          <p className="text-muted-foreground text-base max-w-lg mx-auto mb-8">
-            Contact us or visit our cafe. Our friendly staff will be happy to help you with any queries.
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10">
+            Walk in or contact us to get assistance with any of our services. We're open 7 days a week in Mahipalpur, Delhi.
           </p>
-          <Link to="/contact">
-            <Button
-              size="lg"
-              className="bg-cyber-cyan text-dark-base hover:bg-cyber-cyan/90 font-heading font-bold px-8 py-6 glow-cyan transition-all duration-300 hover:scale-105"
-            >
-              Get in Touch
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-cyber-cyan text-dark-base hover:bg-cyber-cyan/90 font-heading font-bold text-base px-8 py-6 glow-cyan transition-all duration-300 hover:scale-105"
+              >
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </>

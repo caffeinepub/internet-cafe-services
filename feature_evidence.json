@@ -2,9 +2,35 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-completely-remove-all-pricing-cost-text-from-every-service-card-on-the-services-page-frontend-src-pages-services-tsx-replace-any-price-values-pricing-badges-rate-text-or-cost-related-strings-with-a-neutral-dot-placeholder-or-remove-them-entirely-no-monetary-values-rupee-symbols-or-price-related-labels-should-be-visible-anywhere-on-the-services-page",
-      "featureTitle": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+      "featureId": "feature-update-the-business-name-to-rahul-cyber-cafe-across-every-frontend-file-where-the-cafe-s-name-appears-this-includes-the-navbar-logo-brand-text-the-footer-brand-name-the-home-page-hero-section-and-any-headings-that-reference-the-business-name-the-contact-page-business-name-display-and-any-other-in-page-text-that-currently-reads-internet-cafe-internet-cafe-services-or-a-generic-placeholder-name",
+      "featureTitle": "Update the business name to 'Rahul Cyber Cafe' across every frontend file where the cafe's name appears. This includes: the Navbar logo/brand text, the Footer brand name, the Home page hero section and any headings that reference the business name, the Contact page business name display, and any other in-page text that currently reads 'Internet Cafe', 'Internet Cafe Services', or a generic placeholder name.",
       "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/pages/Contact.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-all-seo-metadata-site-wide-to-use-rahul-cyber-cafe-as-the-business-name-this-includes-the-title-tag-and-all-meta-description-open-graph-og-title-og-site-name-twitter-card-and-json-ld-localbusiness-name-field-in-frontend-index-html-and-the-per-page-seo-titles-and-descriptions-in-seohead-calls-on-the-home-services-and-contact-pages-the-page-titles-should-follow-the-pattern-rahul-cyber-cafe-page-subtitle-and-meta-descriptions-should-reference-rahul-cyber-cafe-by-name",
+      "featureTitle": "Update all SEO metadata site-wide to use 'Rahul Cyber Cafe' as the business name. This includes: the <title> tag and all meta description, Open Graph (og:title, og:site_name), Twitter card, and JSON-LD LocalBusiness 'name' field in frontend/index.html; and the per-page SEO titles and descriptions in SEOHead calls on the Home, Services, and Contact pages. The page titles should follow the pattern 'Rahul Cyber Cafe — [Page Subtitle]' and meta descriptions should reference 'Rahul Cyber Cafe' by name.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/pages/Contact.tsx",
+        "frontend/src/pages/Home.tsx",
         "frontend/src/pages/Services.tsx"
       ],
       "components": [
@@ -17,7 +43,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-14"
+        "REQ-16"
       ],
       "confidence": "high"
     }

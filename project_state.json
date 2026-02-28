@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
-  "summary": "Building a public-facing website for an Internet Cafe business to improve online visibility on Google and attract more customers. The cafe offers online government document services (birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card) and does NOT offer gaming services.",
+  "projectStateVersion": 11,
+  "summary": "Building a public-facing website for an Internet Cafe business named 'Rahul Cyber Cafe' to improve online visibility on Google and attract more customers. The cafe offers online government document services (birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card) and does NOT offer gaming services.",
   "architectural_notes": [
     "Public-facing marketing website (not a management system) — focus on SEO and customer attraction",
     "Services offered include online government document services (birth certificate, Aadhaar update, PAN card, ration card, health card, Ayushman card) — gaming is NOT a service",
@@ -10,7 +10,7 @@
   "known_issues": [
     "Pricing information is still visible on service cards despite the fix attempt — needs to be fully removed/replaced with dots"
   ],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-a-visually-appealing-public-facing-homepage-that-clearly-presents-the-internet-cafe-business-name-a-hero-banner-with-a-tagline-a-brief-about-section-highlights-of-key-services-and-a-call-to-action-button-directing-visitors-to-the-services-or-contact-page",
@@ -115,6 +115,22 @@
         "REQ-14"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-business-name-to-rahul-cyber-cafe-across-every-frontend-file-where-the-cafe-s-name-appears-this-includes-the-navbar-logo-brand-text-the-footer-brand-name-the-home-page-hero-section-and-any-headings-that-reference-the-business-name-the-contact-page-business-name-display-and-any-other-in-page-text-that-currently-reads-internet-cafe-internet-cafe-services-or-a-generic-placeholder-name",
+      "title": "Update the business name to 'Rahul Cyber Cafe' across every frontend file where the cafe's name appears. This includes: the Navbar logo/brand text, the Footer brand name, the Home page hero section and any headings that reference the business name, the Contact page business name display, and any other in-page text that currently reads 'Internet Cafe', 'Internet Cafe Services', or a generic placeholder name.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-seo-metadata-site-wide-to-use-rahul-cyber-cafe-as-the-business-name-this-includes-the-title-tag-and-all-meta-description-open-graph-og-title-og-site-name-twitter-card-and-json-ld-localbusiness-name-field-in-frontend-index-html-and-the-per-page-seo-titles-and-descriptions-in-seohead-calls-on-the-home-services-and-contact-pages-the-page-titles-should-follow-the-pattern-rahul-cyber-cafe-page-subtitle-and-meta-descriptions-should-reference-rahul-cyber-cafe-by-name",
+      "title": "Update all SEO metadata site-wide to use 'Rahul Cyber Cafe' as the business name. This includes: the <title> tag and all meta description, Open Graph (og:title, og:site_name), Twitter card, and JSON-LD LocalBusiness 'name' field in frontend/index.html; and the per-page SEO titles and descriptions in SEOHead calls on the Home, Services, and Contact pages. The page titles should follow the pattern 'Rahul Cyber Cafe — [Page Subtitle]' and meta descriptions should reference 'Rahul Cyber Cafe' by name.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -159,6 +175,12 @@
     {
       "id": "AR-13",
       "summary": "Remove pricing from service cards and replace with dots/placeholders. Add owner's phone number (9220270576) and address (Shop, Hotel SKY Blue WALI GALI MAHIPALPUR DELHI) to the website.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update the website name and SEO titles/meta tags site-wide to use 'Rahul Cyber Cafe' as the business name instead of 'Internet Cafe Services'.",
       "reqIds": [],
       "status": "pending"
     }

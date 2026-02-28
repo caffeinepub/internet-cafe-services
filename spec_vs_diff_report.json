@@ -1,13 +1,18 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T06:54:18.589Z",
-  "summary": "The diff shows that frontend/src/pages/Services.tsx was modified to remove all pricing sections from service cards. The file summary explicitly confirms that 'all pricing sections (the Pricing label, price value, and border divider) have been completely removed from every service card' while 'Card layout, cyber theme, features list, and all other content remain unchanged.' This directly addresses REQ-14. The truncated diff shows 13 services listed without any pricing fields in the data objects, consistent with the removal. No hallucinated features are evident.",
+  "generatedAt": "2026-02-28T07:51:21.833Z",
+  "summary": "Both REQ-15 and REQ-16 appear to be fully implemented across all required files. The diff shows 'Rahul Cyber Cafe' replacing old generic names in Navbar, Footer, Home, Services, Contact pages, and index.html SEO metadata including title, og:title, og:site_name, JSON-LD name field, and per-page SEOHead calls.",
   "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.92,
+  "confidence": 0.95,
   "changed_files": [
     "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/Home.tsx",
     "frontend/src/pages/Services.tsx",
     "project_state.json"
   ]

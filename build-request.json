@@ -1,40 +1,63 @@
 {
   "kind": "build_request",
-  "title": "Fix: Remove all pricing information from service cards on Services page",
-  "projectName": "Cyber Cafe Delhi",
-  "priority": "high",
+  "title": "Rebrand site to 'Rahul Cyber Cafe' across all pages and SEO",
+  "projectName": "Rahul Cyber Cafe",
+  "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-14",
-      "text": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+      "id": "REQ-15",
+      "text": "Update the business name to 'Rahul Cyber Cafe' across every frontend file where the cafe's name appears. This includes: the Navbar logo/brand text, the Footer brand name, the Home page hero section and any headings that reference the business name, the Contact page business name display, and any other in-page text that currently reads 'Internet Cafe', 'Internet Cafe Services', or a generic placeholder name.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-recent"
         ],
         "quotes": [
-          "कीमत तो अभी तक शो कर रही है"
+          "Rahul Cyber Cafe"
         ]
       },
       "acceptanceCriteria": [
-        "No rupee amounts, price numbers, or currency symbols are visible on any service card on the Services page.",
-        "No pricing badge, 'Starting at', 'From', or similar price-indicating label is rendered on any card.",
-        "All service cards that previously showed pricing now show a dot '•' or have the pricing element removed entirely.",
-        "The change applies to all service categories: internet browsing, computer rental, government document services, printing, photocopying, lamination, and any other listed services.",
-        "The visual layout and card structure remains intact after removing pricing text."
+        "Navbar logo/brand text displays 'Rahul Cyber Cafe'",
+        "Footer brand name displays 'Rahul Cyber Cafe'",
+        "Home page hero heading includes 'Rahul Cyber Cafe'",
+        "Contact page business name displays 'Rahul Cyber Cafe'",
+        "No page shows the old generic name 'Internet Cafe Services' or 'Internet Cafe' as the business name"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Update all SEO metadata site-wide to use 'Rahul Cyber Cafe' as the business name. This includes: the <title> tag and all meta description, Open Graph (og:title, og:site_name), Twitter card, and JSON-LD LocalBusiness 'name' field in frontend/index.html; and the per-page SEO titles and descriptions in SEOHead calls on the Home, Services, and Contact pages. The page titles should follow the pattern 'Rahul Cyber Cafe — [Page Subtitle]' and meta descriptions should reference 'Rahul Cyber Cafe' by name.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-recent"
+        ],
+        "quotes": [
+          "Rahul Cyber Cafe",
+          "google pe search pe kis naam pe aayega"
+        ]
+      },
+      "acceptanceCriteria": [
+        "frontend/index.html <title> contains 'Rahul Cyber Cafe'",
+        "og:title and og:site_name contain 'Rahul Cyber Cafe'",
+        "JSON-LD LocalBusiness 'name' field is 'Rahul Cyber Cafe'",
+        "Home page SEO title contains 'Rahul Cyber Cafe'",
+        "Services page SEO title contains 'Rahul Cyber Cafe'",
+        "Contact page SEO title contains 'Rahul Cyber Cafe'",
+        "All meta descriptions reference 'Rahul Cyber Cafe' by name"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
-    "Do not alter any contact information (phone: 9220270576, address: Shop, Hotel SKY Blue WALI GALI, Mahipalpur, Delhi).",
-    "Do not change any other page content outside of the Services page pricing fix."
+    "Do not change the phone number (9220270576) or address ('Shop, Hotel SKY Blue WALI GALI, Mahipalpur, Delhi') — these must remain as-is",
+    "Do not add back any pricing information to service cards",
+    "Do not modify files listed in frontend.immutablePaths"
   ],
   "nonGoals": [
-    "Adding new services or modifying service descriptions.",
-    "Changing the visual theme or card layout.",
-    "Modifying the Contact page or Footer.",
-    "Any backend changes."
+    "Adding new pages or sections",
+    "Changing the visual theme or color scheme",
+    "Modifying the services offered",
+    "Changing the contact form functionality"
   ],
   "imageRequirements": {
     "required": [],

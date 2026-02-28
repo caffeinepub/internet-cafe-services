@@ -41,17 +41,17 @@ export default function Navbar() {
             <div className="relative">
               <img
                 src="/assets/generated/cafe-logo.dim_256x256.png"
-                alt="Internet Cafe Services Logo"
+                alt="Rahul Cyber Cafe Logo"
                 className="h-10 w-10 rounded-lg object-cover"
               />
               <div className="absolute inset-0 rounded-lg bg-cyber-cyan/10 group-hover:bg-cyber-cyan/20 transition-colors" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-bold text-lg leading-tight text-foreground group-hover:text-cyber-cyan transition-colors">
-                Internet Cafe
+                Rahul Cyber Cafe
               </span>
               <span className="text-xs text-cyber-cyan font-medium tracking-widest uppercase">
-                Services
+                Mahipalpur, Delhi
               </span>
             </div>
           </Link>

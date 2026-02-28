@@ -21,7 +21,7 @@ const services = [
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const appId = encodeURIComponent(typeof window !== 'undefined' ? window.location.hostname : 'internet-cafe-services');
+  const appId = encodeURIComponent(typeof window !== 'undefined' ? window.location.hostname : 'rahul-cyber-cafe');
 
   return (
     <footer className="bg-dark-card border-t border-border/50">
@@ -33,15 +33,15 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-3 mb-4 group">
               <img
                 src="/assets/generated/cafe-logo.dim_256x256.png"
-                alt="Internet Cafe Services"
+                alt="Rahul Cyber Cafe"
                 className="h-10 w-10 rounded-lg object-cover"
               />
               <div>
                 <div className="font-heading font-bold text-foreground group-hover:text-cyber-cyan transition-colors">
-                  Internet Cafe
+                  Rahul Cyber Cafe
                 </div>
                 <div className="text-xs text-cyber-cyan tracking-widest uppercase font-medium">
-                  Services
+                  Mahipalpur, Delhi
                 </div>
               </div>
             </Link>
@@ -149,7 +149,7 @@ export default function Footer() {
       <div className="border-t border-border/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-            <span>© {year} Internet Cafe Services. All rights reserved.</span>
+            <span>© {year} Rahul Cyber Cafe. All rights reserved.</span>
             <span className="flex items-center gap-1">
               Built with{' '}
               <Heart className="w-3 h-3 text-cyber-cyan fill-cyber-cyan mx-0.5" />{' '}

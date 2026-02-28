@@ -1,24 +1,47 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-28T06:54:18.592Z",
+  "generatedAt": "2026-02-28T07:51:21.836Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 2,
+    "implemented": 2,
     "items": [
       {
-        "id": "REQ-14",
-        "summary": "Completely remove all pricing/cost text from every service card on the Services page (frontend/src/pages/Services.tsx). Replace any price values, pricing badges, rate text, or cost-related strings with a neutral dot placeholder ('•') or remove them entirely. No monetary values, rupee symbols, or price-related labels should be visible anywhere on the Services page.",
+        "id": "REQ-15",
+        "summary": "Update the business name to 'Rahul Cyber Cafe' across every frontend file where the cafe's name appears. This includes: the Navbar logo/brand text, the Footer brand name, the Home page hero section and any headings that reference the business name, the Contact page business name display, and any other in-page text that currently reads 'Internet Cafe', 'Internet Cafe Services', or a generic placeholder name.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/pages/Services.tsx"
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Contact.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/pages/Services.tsx"
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Update all SEO metadata site-wide to use 'Rahul Cyber Cafe' as the business name. This includes: the <title> tag and all meta description, Open Graph (og:title, og:site_name), Twitter card, and JSON-LD LocalBusiness 'name' field in frontend/index.html; and the per-page SEO titles and descriptions in SEOHead calls on the Home, Services, and Contact pages. The page titles should follow the pattern 'Rahul Cyber Cafe — [Page Subtitle]' and meta descriptions should reference 'Rahul Cyber Cafe' by name.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Services.tsx",
+          "frontend/src/pages/Contact.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/pages/Home.tsx",
+          "frontend/src/pages/Services.tsx",
+          "frontend/src/pages/Contact.tsx"
         ]
       }
     ]
@@ -28,6 +51,11 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/pages/Contact.tsx",
+    "frontend/src/pages/Home.tsx",
     "frontend/src/pages/Services.tsx",
     "project_state.json",
     "scratch/component-selection.json",
