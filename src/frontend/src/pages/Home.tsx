@@ -119,10 +119,10 @@ export default function Home() {
           </Badge>
 
           <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            <span className="gradient-text text-glow-cyan">
+            <span className="block gradient-text text-glow-cyan">
               ICC Computer & Online Service
             </span>
-            <span className="text-foreground text-2xl sm:text-3xl md:text-4xl">
+            <span className="block text-foreground text-2xl sm:text-3xl md:text-4xl mt-2">
               Mahipalpur, Delhi
             </span>
           </h1>
